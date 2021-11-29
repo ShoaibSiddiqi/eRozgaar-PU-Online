@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../Project_15 Calculator Using Jquery/jquery-3.6.0.min.js "></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> -->
+    <script src="../Project_15 Calculator Using Jquery/min.js"></script>
+    <link href="../Project_15 Calculator Using Jquery/style.css" rel="stylesheet" type="text/css">
+    <title>Jquery Calculator</title>
+</head>
+<body>
+    <div class="calc">
+        <form name="form">
+            <input class="calc-display">
+        </form>
+        <table>
+            <tr>
+                <td><input type="button" value="C" onClick="c()"></td>
+                <td><input type="button" value="/" onClick="insert('/')"></td>
+                <td><input type="button" value="<" onClick="del()"></td>
+                <td><input type="button" value="X" onClick="insert('*')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onClick="insert(7)"></td>
+                <td><input type="button" value="8" onClick="insert(8)"></td>
+                <td><input type="button" value="9" onClick="insert(9)"></td>
+                <td><input type="button" value="-" onClick="insert('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onClick="insert(4)"></td>
+                <td><input type="button" value="5" onClick="insert(5)"></td>
+                <td><input type="button" value="6" onClick="insert(6)"></td>
+                <td><input type="button" value="+" onClick="insert('+')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onClick="insert(1)"></td>
+                <td><input type="button" value="2" onClick="insert(2)"></td>
+                <td><input type="button" value="3" onClick="insert(3)"></td>
+                <td><input type="button" value="=" onClick="eql()"></td>
+            </tr>
+            <tr>
+                <td colspan="3"><input type="button" value="0" onClick="insert(0)" style="width: 250px;"></td>
+                <td><input type="button" value="." onClick="insert('.')"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
